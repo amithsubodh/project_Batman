@@ -55,15 +55,18 @@ import { Link } from 'react-router-dom';
         <div className='container px-4 mx-auto relative text-sm'>
           <div className='flex justify-between items-center'>
             <div className='flex items-center flex-shrink-0 '>
-              <Link to={'/'}><img className='h-8 w-6 mr-2' src='/batMan.png' alt='Logo' /></Link>
-              <span className='sm:text-xl text-lg tracking-tight font-batmanFont'>BatWerse</span>
+              <Link to={'/'}><img className=' h-15 w-15 mr-2' src='/logo.png' alt='Logo' /></Link>
+              <span className='sm:text-xl text-lg tracking-tight font-batmanFont'>CulinAIry</span>
             </div>
             
+            <div className='flex '>
             <ul className='hidden lg:flex md:flex  space-x-5 text-xl font-babas tracking-widest'>
               <li><Link to='/'>Home</Link></li>
-              <li><Link to='/Characters'>Characters</Link></li>
-              <li><Link to='/Movies'>Movies</Link></li>
+              <li><Link to='/Characters'>Recipes</Link></li>
+              <li><Link to='/Movies'>Saved</Link></li>
+              <button className="border-2 px-4 rounded-md ">Login</button>
             </ul>
+            </div>
             
             <div className='lg:hidden md:hidden'>
               <button onClick={toggleButton} className="object-cover ">
